@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(5, 5, 5);
+}
+nav{
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+.logo{
+    width: 40%;
+    /* background-color: darkgoldenrod; */
+}
+.logo a{
+    text-decoration: none;
+    
+}
+.logo a h1{
+    padding-left: 55px;
+    color: #fff;
+    text-shadow: 1px 2px 2px darkorange;
+}
+.menu{
+    width: 60%;
+    /* background-color:darkmagenta; */
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    /* font-size: large; */
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.5s linear;
+}
+.menu a:hover:after{
+    width: 100%;
+    background-color:darkorange;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 12vh);
+    line-height: 3rem;
+}
+.left{
+    width: 50%;
+    color: #fff;
+    padding-left: 55px;
+    letter-spacing: 1px;
+
+}
+
+.left h1{
+   font-size: xxx-large;
+   color: darkorange;
+   text-transform: uppercase;
+}
+
+button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 7px;
+    margin-top: 20px;
+    height: 50px; 
+}
+button:hover{
+    color: #fff;
+    background-color:darkorange;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border: rgb(5, 5, 5);
+}
+.btn2{
+    margin-left: 12px;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.right img{
+    animation: example 1s 0.2s 1 normal ease-in-out;
+    position: relative;
+}
+@keyframes example {
+  
+    0%  {left:100px; top:0px;}
+   
+    100% {left:0px; top:0px;}
+  }
+@media screen and (max-width:768px) {
+    /* body{
+        overflow: hidden;
+    } */
+    /* nav{
+        width: 100vw;
+    } */
+    .logo a h1 {
+        padding-left: 30px;
+    }
+    section{
+        /* width: 100vw; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 12vh);
+        line-height: 3rem;
+    }
+    .left{
+        width: 100%;
+        color: #fff;
+        padding: 20px 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        order: 2;
+    }
+    .right{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        order: 1;
+    }
+}
+@media screen and (max-width: 576px){
+    nav{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        /* display: flex; */
+        text-align: center;
+    }
+    .logo a h1 {
+        /* padding-left: 30px; */
+        /* margin: auto; */
+        /* margin: 0; */
+        padding: 0;
+        /* padding-bottom: 12px; */
+        padding: 12px 0;
+    }
+    .menu {
+        width: 100%;
+        /* background-color: darkmagenta; */
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 0;
+    }
+
+}

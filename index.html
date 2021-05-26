@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <h1>PortFolio</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <div class="left">
+            <h2>Hello There!</h2>
+            <h1><strong>I'm <span class="type"></span> </strong></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus facere vitae corrupti, nesciunt earum
+                laboriosam quaerat. Dolorem officiis sequi iste cumque quo adipisci expedita inventore, ratione
+                consectetur culpa, voluptate reiciendis voluptatum esse, quaerat velit commodi eius. Doloremque dolore
+                quasi iste sint accusantium at cumque amet?</p>
+            <button class="btn1">About Me</button> <button class="btn2">Contact Me</button>
+        </div>
+        <div class="right">
+            <img src="img.jpg" alt="photo" width="400px">
+        </div>
+    </section>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['Developer',
+                      'Designer',
+                      'Creator'
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+</body>
+
+</html>
